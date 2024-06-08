@@ -50,8 +50,8 @@ const Register = () => {
   };
   return (
     <>
-      <div className="flex flex-col justify-center items-center w-screen h-screen bg-slate-300">
-        <h2 className=" text-3xl my-16 font-bold">REGISTER</h2>
+      <div className="flex flex-col justify-center items-center w-screen h-screen bg-slate-900">
+        <h2 className=" text-3xl mt-16 text-white font-bold">REGISTER</h2>
         <div className=" bg-slate-900 rounded-md flex flex-col justify-center items-center p-4">
           <form className="flex flex-col m-8 " onSubmit={send}>
             <input
@@ -61,7 +61,7 @@ const Register = () => {
               required
               placeholder="Email"
               autoComplete="on"
-              className="m-2 rounded-md h-8 p-2"
+              className="text-sm text-slate-50 border bg-slate-800 outline-none border-none px-2 py-1 w-64 h-8 m-3 rounded"
             />
             <input
               id="password"
@@ -70,7 +70,7 @@ const Register = () => {
               required
               placeholder="Password"
               autoComplete="on"
-              className="m-2 rounded-md h-8 p-1"
+              className="text-sm text-slate-50 border bg-slate-800 outline-none border-none px-2 py-1 w-64 h-8 m-3 rounded"
             />
             <button
               className=" bg-green-300 m-2 rounded-md h-8 p-1"

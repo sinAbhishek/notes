@@ -44,9 +44,9 @@ const Login = () => {
   };
 
   return (
-    <div className=" flex justify-center items-center w-screen h-screen bg-slate-300">
+    <div className=" flex justify-center items-center w-screen h-screen bg-slate-900">
       <div className="flex flex-col justify-center items-center">
-        <h2 className=" text-3xl my-16 font-bold">Login</h2>
+        <h2 className=" text-3xl mt-16 font-bold text-white">Login</h2>
         <form
           className="flex bg-slate-900 p-8 rounded-md justify-center items-center flex-col"
           onSubmit={login}
@@ -54,7 +54,7 @@ const Login = () => {
           <input
             id="email"
             type="text"
-            className=" text-sm border border-black p-2 w-64 h-8 m-3 rounded"
+            className=" text-sm text-slate-50 border bg-slate-800 outline-none border-none px-2 py-1 w-64 h-8 m-3 rounded "
             placeholder="Email"
             required
             onChange={handlechange}
@@ -62,7 +62,7 @@ const Login = () => {
           <input
             id="password"
             type="password"
-            className="text-sm border border-black p-2 w-64 h-8 m-3 rounded"
+            className="text-sm border text-slate-50 bg-slate-800 outline-none border-none px-2 py-1 w-64 h-8 m-3 rounded"
             placeholder="Password"
             required
             onChange={handlechange}
@@ -89,7 +89,7 @@ const Login = () => {
         </form>
         <button
           onClick={demoUser}
-          className=" bg-green-500 w-64 h-8 rounded my-2 text-slate-100"
+          className=" bg-green-500 w-64 h-8 rounded mb-2 text-slate-100"
         >
           Login as guest
         </button>
